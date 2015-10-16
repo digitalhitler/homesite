@@ -12,5 +12,8 @@
   },
   "author": "Sergey S Petrenko <spetrenko@me.com>",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/digital_hitler/getrixhomesite#readme"
+  "homepage": "https://bitbucket.org/digital_hitler/getrixhomesite#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
 }

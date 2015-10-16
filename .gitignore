@@ -1,2 +1,11 @@
+# storm project
 .idea
 .idea/*
+
+# logs
+logs
+logs/*
+*.log
+
+# runtime data
+*.pid
