@@ -1,0 +1,16 @@
+{
+  "name": "getrix-homesite",
+  "version": "1.0.0",
+  "description": "Homesite of Sergey Petrenko (getrix as known as DigitalHitler)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://digital_hitler@bitbucket.org/digital_hitler/getrixhomesite.git"
+  },
+  "author": "Sergey S Petrenko <spetrenko@me.com>",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/digital_hitler/getrixhomesite#readme"
+}
