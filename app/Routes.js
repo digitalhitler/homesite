@@ -10,6 +10,7 @@
 module.exports = [
   {
     path: '/',
+    layout: 'pageWithSidebar',
     handler: use('routes/IndexRoute'),
   },
   //{

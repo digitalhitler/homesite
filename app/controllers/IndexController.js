@@ -10,7 +10,6 @@
 module.exports = {
  index: {
   get(req, res) {
-    console.log('test: ' + app.intl.t("app.name"));
 
     let PostsController = require('../controllers/PostsController');
 

@@ -20,9 +20,11 @@ log.info('Starting application...');
 let express       = require('express');
 let http          = require('http');
 
-let Router        = use('Router');
 let app           = express();
 let server        = http.createServer(app);
+
+let Routes        = use('Routes');
+let Layouts       = use('Layouts');
 
 // globalizing application and log-handler.
 // (its not good practice but really useful, we're sorry)
@@ -31,15 +33,28 @@ global.app = app;
 
 app.intl          = use('Intl');
 
-use('ViewToolkit');
-
 require('./config/middleware')(app, express);
 
+app.log.info('Binding routes...');
+Routes.forEach(route => {
+  let handlers = [ route.handler ],
+      layout;
 
-Router.forEach(route => {
- app.use(route.path, route.handler);
+  if(route.layout) {
+    layout = Layouts[route.layout];
+  } else {
+    layout = Layouts[Layouts.default];
+  }
+
+  for(let curr in layout.requires) {
+    let layoutHandler = use(`middlewares/${layout.requires[curr]}`);
+    handlers.unshift(layoutHandler);
+  }
+
+  app.use(route.path, handlers);
 });
 
+// If no route found, return HTTP/404
 app.use((req, res, next) => {
 
   app.log.error("We got 404", {

@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- middleware.js
+ /config/middleware.js
 
  @file Middlewares for Express
  @author Sergey S Petrenko <spetrenko@me.com>
