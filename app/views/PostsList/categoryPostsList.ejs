@@ -1,0 +1,16 @@
+<div class="home-page-posts animated fadeIn ">
+  <% posts.forEach(function(post) { %>
+    <article class="post">
+        <div class="post-preview col-xs-12  no-gutter">
+            <h2><a href="post.html"><%=post.title%></a></h2>
+
+            <p><%=post.short%></p>
+
+            <p class="meta">
+                <a href="author.html">James Reddy</a> in <a href="category.html">Storytime</a> <i class="link-spacer"></i> <i class="fa fa-bookmark"></i> 23 minute read
+            </p>
+        </div>
+
+    </article>
+  <% }); %>
+</div>

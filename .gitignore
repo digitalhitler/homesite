@@ -9,3 +9,6 @@ logs/*
 
 # runtime data
 *.pid
+
+# node modules (am I right?)
+node_modules

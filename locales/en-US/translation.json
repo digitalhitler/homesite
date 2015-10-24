@@ -1,0 +1,23 @@
+{
+  "app": {
+    "name": "Getrix Homesite"
+  },
+
+  "commons": {
+    "myName": "Sergey Petrenko"
+  },
+
+  "layout": {
+    "sidebar": {
+      "title": "$t(commons.myName)",
+      "subtitle": "Frontend-developer with love to wine and UX lost somewhere in Russia.",
+      "contactButton": "Find a way to contact"
+    },
+
+    "nav": {
+      "posts": "Posts",
+      "categories": "Categories",
+      "albums": "Albums"
+    }
+  }
+}
