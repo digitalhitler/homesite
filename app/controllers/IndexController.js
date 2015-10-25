@@ -15,7 +15,7 @@ module.exports = {
 
     PostsController.getPage(1, function(posts) {
       res.locals.posts = posts;
-      res.render('index');
+      res.render('indexPage');
     });
   },
  },

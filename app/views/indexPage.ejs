@@ -1,0 +1,87 @@
+<% layout('layouts/pageWithSidebar') -%>
+<% block('sidebarImage').append('/img/sidebars/saintp_1.jpg') %>
+<div class="sub-nav">
+    <a href="#" class="select-posts active">
+      <%=t('layout.nav.posts')%>
+    </a>
+    <a href="#" class="select-photos">
+      <%=t('layout.nav.albums')%>
+    </a>
+    <a href="#" class="select-categories">
+      <%=t('layout.nav.categories')%>
+    </a>
+</div>
+
+<% include PostsList/categoryPostsList %>
+
+<div class="home-page-categories hide animated fadeIn ">
+    <div class="category row">
+        <section>
+            <div class="category-preview col-xs-6 col-sm-4 ">
+                <h2>Easy Living</h2>
+                <a href="category.html"><img src="img/cover-2.jpg" alt="category-image"></a>
+            </div>
+
+            <div class="category-preview col-xs-6 col-sm-4 ">
+                <h2>Adventure</h2>
+                <a href="category.html"><img src="img/cover-4.jpg" alt="category-image"></a>
+            </div>
+
+            <div class="category-preview col-xs-6 col-sm-4 ">
+                <h2>Storytime</h2>
+                <a href="category.html"><img src="img/cover-6.jpg" alt="category-image"></a>
+            </div>
+
+            <div class="category-preview col-xs-6 col-sm-4 ">
+                <h2>Open Roads</h2>
+                <a href="category.html"><img src="img/cover-9.jpg" alt="category-image"></a>
+            </div>
+
+            <div class="category-preview col-xs-6 col-sm-4 ">
+                <h2>Gaming</h2>
+                <a href="category.html"><img src="img/cover-1.jpg" alt="category-image" ></a>
+            </div>
+
+            <div class="category-preview col-xs-6 col-sm-4 ">
+                <h2>City Life</h2>
+                <a href="category.html"><img src="img/cover-3.jpg" alt="category-image"></a>
+            </div>
+
+            <div class="category-preview col-xs-6 col-sm-4 ">
+                <h2>Rave Culture</h2>
+                <a href="category.html"><img src="img/cover-5.jpg" alt="category-image"></a>
+            </div>
+
+            <div class="category-preview col-xs-6 col-sm-4 ">
+                <h2>Photography</h2>
+                <a href="category.html"><img src="img/cover-7.jpg" alt="category-image"></a>
+            </div>
+
+            <div class="category-preview col-xs-6 col-sm-4 ">
+                <h2>Animal Kingdom</h2>
+                <a href="category.html"><img src="img/cover-8.jpg" alt="category-image"></a>
+            </div>
+
+            <div class="category-preview col-xs-6 col-sm-4 ">
+                <h2>Beach</h2>
+                <a href="category.html"><img src="img/cover-10.jpg" alt="category-image"></a>
+            </div>
+
+            <div class="category-preview col-xs-6 col-sm-4 ">
+                <h2>Climbing</h2>
+                <a href="category.html"><img src="img/cover-11.jpg" alt="category-image"></a>
+            </div>
+
+            <div class="category-preview col-xs-6 col-sm-4 ">
+                <h2>Mystery</h2>
+                <a href="category.html"><img src="img/cover-12.jpg" alt="category-image"></a>
+            </div>
+
+        </section>
+    </div>
+</div>
+<footer class="split-footer">
+    <a href="post.html">About</a>
+    <i class="link-spacer"></i>
+    <a href="post.html">Writer 2015</a>
+</footer>

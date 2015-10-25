@@ -13,6 +13,11 @@ module.exports = [
     layout: 'pageWithSidebar',
     handler: use('routes/IndexRoute'),
   },
+  {
+    path: '/about',
+    layout: 'pageWithSidebar',
+    handler: use('routes/AboutRoute'),
+  },
   //{
   // path: '/posts',
   // handler: use('routes/PostsListRoute'),

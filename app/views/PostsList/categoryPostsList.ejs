@@ -1,6 +1,5 @@
 <div class="home-page-posts animated fadeIn ">
-  <%=randomString; %>
-  <% posts.forEach(function(post) { %>
+  <% posts.forEach(function(post) { console.log(post)%>
     <article class="post">
         <div class="post-preview col-xs-12  no-gutter">
             <h2><a href="post.html"><%=post.title%></a></h2>
@@ -8,10 +7,9 @@
             <p><%=post.short%></p>
 
             <p class="meta">
-                <a href="author.html">James Reddy</a> in <a href="category.html">Storytime</a> <i class="link-spacer"></i> <i class="fa fa-bookmark"></i> 23 minute read
+                <a href="category.html"><%=post.category.title%></a> <i class="link-spacer"></i> <%=relativeDate(post.date)%>
             </p>
         </div>
-
     </article>
   <% }); %>
 </div>

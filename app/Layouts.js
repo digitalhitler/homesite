@@ -13,9 +13,7 @@ module.exports = {
 
   pageWithSidebar: {
     requires: [
-      'viewToolkit',
-      'currentDate',
-      'randomString'
+      'viewToolkit'
     ]
   }
 }

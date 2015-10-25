@@ -10,6 +10,7 @@
 let path           = require('path');
 let session        = require('express-session');
 let compression    = require('compression');
+let engine         = require('ejs-mate');
 
 module.exports = function(app, express) {
 
@@ -31,7 +32,7 @@ module.exports = function(app, express) {
   /*
    * Views & templates
    */
-
+  app.engine('ejs', engine);
   app.set('views', path.join(__dirname, '../app/views'));
   app.set('view engine', 'ejs');
   app.use(express.static(path.join(__dirname, '../assets')));
