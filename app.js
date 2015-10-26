@@ -31,7 +31,7 @@ let Layouts       = use('Layouts');
 app.log = log;
 global.app = app;
 
-app.intl          = use('Intl');
+app.intl = use('Intl');
 
 require('./config/middleware')(app, express);
 
@@ -53,6 +53,7 @@ Routes.forEach(route => {
 
   app.use(route.path, handlers);
 });
+
 
 // If no route found, return HTTP/404
 app.use((req, res, next) => {

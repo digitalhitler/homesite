@@ -55,6 +55,13 @@ module.exports = {
     return result;
   },
 
+
+  /**
+   * [getPage description]
+   * @param  {[type]}   params   [description]
+   * @param  {Function} callback [description]
+   * @return {[type]}            [description]
+   */
   getPage: function (params, callback) {
 
     if(typeof params === 'number' || typeof params === 'undefined') {

@@ -12,3 +12,6 @@ logs/*
 
 # node modules (am I right?)
 node_modules
+
+# os x shit:
+.DS_Store
